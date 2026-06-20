@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* Custom Theme - pengganti tailwind.config.js */
+@theme {
+  --color-gold-50: #fef9e7;
+  --color-gold-100: #fdf2c4;
+  --color-gold-200: #fbe588;
+  --color-gold-300: #f9d64c;
+  --color-gold-400: #f7c948;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b8941f;
+  --color-gold-700: #9a7b1a;
+  --color-gold-800: #7c6215;
+  --color-gold-900: #5e4a10;
+  
+  --color-dark-50: #2a2a2a;
+  --color-dark-100: #1f1f1f;
+  --color-dark-200: #1a1a1a;
+  --color-dark-300: #141414;
+  --color-dark-400: #0f0f0f;
+  --color-dark-500: #0a0a0a;
+  --color-dark-600: #050505;
+  --color-dark-700: #030303;
+  --color-dark-800: #020202;
+  --color-dark-900: #000000;
+  
+  --shadow-gold: 0 0 20px rgba(212, 175, 55, 0.3);
+  --shadow-gold-lg: 0 0 40px rgba(212, 175, 55, 0.4);
+  --shadow-gold-xl: 0 0 60px rgba(212, 175, 55, 0.5);
+  
+  --animate-shimmer: shimmer 2s linear infinite;
+  
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-dark-800);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-gold-700);
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-gold-500);
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  }
+  
+  .glass {
+    background-color: rgb(0 0 0 / 0.5);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgb(212 175 55 / 0.2);
+  }
+}
