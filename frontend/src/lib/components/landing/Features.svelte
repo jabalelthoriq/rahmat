@@ -10,29 +10,29 @@
       gradient: 'from-gold-500/20 to-gold-600/20',
       border: 'border-gold-500/40',
       text: 'text-gold-400',
-      shadow: 'shadow-gold',
+      shadow: 'shadow-gold-lg',
       badge: 'Live'
     },
     {
       icon: Shield,
       title: 'Rekomendasi Personal',
       description: 'Dapatkan rekomendasi investasi yang disesuaikan dengan profil risiko dan tujuan finansial Anda.',
-      color: 'cyan',
-      gradient: 'from-cyan-500/20 to-cyan-600/20',
-      border: 'border-cyan-500/40',
-      text: 'text-cyan-400',
-      shadow: 'shadow-neon',
+      color: 'gold',
+      gradient: 'from-gold-500/20 to-gold-600/20',
+      border: 'border-gold-500/40',
+      text: 'text-gold-400',
+      shadow: 'shadow-gold-lg',
       badge: 'AI'
     },
     {
       icon: BarChart3,
       title: 'Analisis Mendalam',
       description: 'Grafik interaktif, moving average, dan indikator teknikal untuk membantu keputusan investasi.',
-      color: 'purple',
-      gradient: 'from-purple-500/20 to-purple-600/20',
-      border: 'border-purple-500/40',
-      text: 'text-purple-400',
-      shadow: 'shadow-purple',
+      color: 'gold',
+      gradient: 'from-gold-500/20 to-gold-600/20',
+      border: 'border-gold-500/40',
+      text: 'text-gold-400',
+      shadow: 'shadow-gold-lg',
       badge: 'Pro'
     },
     {
@@ -43,56 +43,56 @@
       gradient: 'from-gold-500/20 to-amber-600/20',
       border: 'border-amber-500/40',
       text: 'text-amber-400',
-      shadow: 'shadow-gold',
+      shadow: 'shadow-gold-lg',
       badge: 'Smart'
     },
     {
       icon: Bell,
       title: 'Alert Harga',
       description: 'Atur notifikasi saat harga mencapai target Anda. Jangan lewatkan momen terbaik untuk investasi.',
-      color: 'cyan',
-      gradient: 'from-cyan-500/20 to-blue-600/20',
-      border: 'border-blue-500/40',
-      text: 'text-blue-400',
-      shadow: 'shadow-neon',
+      color: 'gold',
+      gradient: 'from-gold-500/20 to-gold-600/20',
+      border: 'border-gold-500/40',
+      text: 'text-gold-400',
+      shadow: 'shadow-gold-lg',
       badge: 'Auto'
     },
     {
       icon: Zap,
       title: 'Performa Tinggi',
       description: 'Dibangun dengan teknologi modern untuk pengalaman yang cepat, responsif, dan tanpa lag.',
-      color: 'purple',
-      gradient: 'from-purple-500/20 to-pink-600/20',
-      border: 'border-pink-500/40',
-      text: 'text-pink-400',
-      shadow: 'shadow-purple',
+      color: 'gold',
+      gradient: 'from-gold-500/20 to-gold-600/20',
+      border: 'border-gold-500/40',
+      text: 'text-gold-400',
+      shadow: 'shadow-gold-lg',
       badge: 'Fast'
     }
   ];
 </script>
 
-<section id="features" class="relative py-32 overflow-hidden">
-  <!-- Background Effects -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:3rem_3rem] opacity-10"></div>
+<section id="features" class="relative py-32 overflow-hidden bg-black">
+  <!-- Background Effects - Gold Grid -->
+  <div class="absolute inset-0 cyber-grid opacity-20"></div>
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gold-500/10 rounded-full blur-[128px]"></div>
-  <div class="absolute bottom-0 left-1/4 w-[800px] h-[400px] bg-cyan-500/5 rounded-full blur-[128px]"></div>
+  <div class="absolute bottom-0 left-1/4 w-[800px] h-[400px] bg-gold-600/5 rounded-full blur-[128px]"></div>
   
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <!-- Header -->
     <div class="text-center mb-20">
       <!-- Badge -->
-      <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass-futuristic mb-6 animate-float">
+      <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass-futuristic mb-6 animate-float metallic-border">
         <Sparkles class="w-4 h-4 text-gold-400" />
         <span class="text-sm font-semibold text-gold-300 uppercase tracking-wide">Fitur Unggulan</span>
       </div>
       
       <h2 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-        Teknologi <span class="gradient-text text-transparent bg-clip-text">Masa Depan</span>
+        Teknologi <span class="gradient-text-metallic text-transparent bg-clip-text glitch-text" data-text="Masa Depan">Masa Depan</span>
         <br />
         <span class="text-3xl md:text-5xl text-gray-400 font-bold mt-2 block">Untuk Investasi Anda</span>
       </h2>
       
-      <p class="text-xl text-gray-300 max-w-3xl mx-auto glass-futuristic inline-block px-8 py-4 rounded-2xl">
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto glass-premium inline-block px-8 py-4 rounded-2xl corner-accent">
         Semua yang Anda butuhkan untuk investasi emas yang cerdas dan profitable, 
         didukung oleh teknologi terkini dan analisis mendalam.
       </p>
@@ -105,11 +105,11 @@
           class="group relative perspective"
           style="animation: float 6s ease-in-out infinite; animation-delay: {index * 0.5}s;"
         >
-          <!-- Glow Effect Behind Card -->
+          <!-- Glow Effect Behind Card - Gold -->
           <div class="absolute inset-0 bg-gradient-to-br {feature.gradient} rounded-3xl blur-2xl opacity-30 group-hover:opacity-60 transition-opacity duration-500"></div>
           
           <!-- Main Card -->
-          <div class="relative glass-card rounded-3xl p-8 h-full transition-all duration-500 hover:scale-[1.02] hover:border-opacity-60 neon-border scanline">
+          <div class="relative glass-premium rounded-3xl p-8 h-full transition-all duration-500 hover:scale-[1.02] hover:border-opacity-60 neon-border scanline corner-accent">
             <!-- Badge -->
             <div class="absolute top-6 right-6">
               <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full glass-futuristic {feature.text} border {feature.border}">
@@ -149,21 +149,20 @@
     
     <!-- Bottom CTA Section -->
     <div class="mt-20 text-center">
-      <div class="glass-futuristic rounded-3xl p-12 relative overflow-hidden neon-border">
+      <div class="glass-premium rounded-3xl p-12 relative overflow-hidden neon-border holographic-gold">
         <!-- Background Animation -->
-        <div class="absolute inset-0 holographic opacity-30"></div>
         
         <div class="relative z-10">
           <Cpu class="w-16 h-16 mx-auto mb-6 text-gold-400 animate-pulse-slow" />
           <h3 class="text-3xl md:text-4xl font-black text-white mb-4">
-            Siap Memulai <span class="gradient-text text-transparent bg-clip-text">Investasi Masa Depan?</span>
+            Siap Memulai <span class="gradient-text-metallic text-transparent bg-clip-text">Investasi Masa Depan?</span>
           </h3>
           <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Bergabunglah dengan ribuan investor cerdas yang telah menggunakan platform kami.
           </p>
           <a 
             href="/auth/register"
-            class="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 text-black font-bold rounded-2xl hover:scale-105 transition-all duration-300 neon-border"
+            class="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-600 text-black font-bold rounded-2xl hover:scale-105 transition-all duration-300 neon-border neon-border-glow"
           >
             <Globe class="w-5 h-5" />
             Mulai Sekarang - Gratis
